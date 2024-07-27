@@ -1,16 +1,7 @@
 name: wolfPKCS11 Build Workflow
 
 on:
-
-    workflow_call:
-      inputs:
-        config:
-          required: false
-          type: string
-        check:
-          required: false
-          type: string
-          default: 'make check'
+  workflow_dispatch:
 
 jobs:
   build:
